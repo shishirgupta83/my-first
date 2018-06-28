@@ -1,0 +1,31 @@
+<p>
+  state-search works!
+</p>
+
+<!--<mat-form-field class="search-form">
+  <input matInput placeholder="Search Picture" aria-label="Number" matInput [formControl]="myControl" 
+  type="text" [matAutocomplete]="auto">
+  <mat-autocomplete #auto="matAutocomplete">
+
+    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+      {{ option }}
+    </mat-option>
+  </mat-autocomplete>
+</mat-form-field>
+<button button="submit" mat-raised-button color="primary">Search</button>-->
+<input #box (keyup.enter)="onEnter(box.value)">
+<table *ngIf="arrState">
+       
+  <tr>
+      <th>ID</th>
+          <th>Name of State</th>
+              
+  </tr>
+
+  
+  <tr *ngFor="let itema of tt">
+    <td>{{itema.id}}</td>
+        <td>{{itema.name}}</td>
+            <!--<td>{{item.location}}</td>-->
+  </tr>
+</table>

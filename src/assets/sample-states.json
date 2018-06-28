@@ -1,0 +1,22 @@
+[
+    {
+  "id": 1,
+  "name": "St Annes",
+  "location": "jayanagar"
+},
+{
+  "id": 2,
+  "name": "St Kurkur",
+  "location": "jayanagar"
+},
+{
+  "id": 3,
+  "name": "St Agnes",
+  "location": "indiranagar"
+},
+{
+  "id": 4,
+  "name": "St Gagan",
+  "location": "indiranagar"
+}
+]

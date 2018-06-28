@@ -1,0 +1,32 @@
+<input #box (keyup.enter)="onEnter(box.value)">
+<!--<p>{{s.name}}</p>-->
+
+<!--<tr *ngFor="let item of t">
+  <td>{{item}}</td>
+      
+</tr>-->
+
+<mat-form-field class="search-form">
+  <input matInput placeholder="Search Picture" aria-label="Number" matInput [formControl]="myControl" 
+  type="text" [matAutocomplete]="auto" (click) = "setup()">
+  <mat-autocomplete #auto="matAutocomplete">
+
+    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+      {{ option }}
+    </mat-option>
+  </mat-autocomplete>
+</mat-form-field>
+
+<button button="submit" mat-raised-button color="primary">Search</button>
+<!--<button button="submit" mat-raised-button color="primary">Search</button>-->
+
+<!--<table *ngIf="arrState">
+  <tr>
+      <th>ID</th>
+          <th>Name of School</th>
+              
+  </tr>
+  <tr *ngFor="let item of options">
+    <p>{{item}}</p>
+  </tr>
+</table>-->
